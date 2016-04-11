@@ -21,7 +21,7 @@
                 </ul>
             </nav>
             <div class="logo">
-                <span>We are</span><br><span>The band</span>
+                <h1><span>We are</span><br><span>The band</span></h1>
                 <ul class="bg-words">
                     <li>Music</li>
                     <li>Sound</li>
@@ -37,34 +37,122 @@
     </header>
     <main>
         <section class="slider">
-            <div class="slider-btns">
-                <input type="radio" name="toggle" id="btn-1">
-                <input type="radio" name="toggle" id="btn-2">
-                <input type="radio" name="toggle" id="btn-3" checked>
-                <input type="radio" name="toggle" id="btn-4">
-                <input type="radio" name="toggle" id="btn-5">
-                <div class="slider-controls">
-                    <label for="btn-1">Lawrie Alton <span>Vocalist</span></label>
-                    <label for="btn-2">Charles Timmy <span>Guitar</span></label>
-                    <label for="btn-3">Curt Sheard <span>Bass</span></label>
-                    <label for="btn-4">Cade Ryker <span>Drums</span></label>
-                    <label for="btn-5">Tommie Brendan <span>Electronics</span></label>
-                </div>
-            </div>
             <div class="inner">
-                <div class="slides">
-                    <img src="i/member3.jpg">
-                    <img src="i/member3.jpg">
-                    <img src="i/member3.jpg">
-                    <img src="i/member3.jpg">
-                    <img src="i/member3.jpg">
+                <h1><span>Curt</span><br><span>Sheard</span></h1>
+                <div class="right-column">
+                    <div class="slider-btns">
+                        <fieldset class="btn-1">
+                            <input type="radio" name="toggle" id="btn-1">
+                            <label for="btn-1">Lawrie Alton <span>Vocalist&nbsp;&nbsp;&nbsp;</span></label>
+                        </fieldset>
+                        <fieldset class="btn-2">
+                            <input type="radio" name="toggle" id="btn-2">
+                            <label for="btn-2">Charles Timmy <span>Guitar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
+                        </fieldset>
+                        <fieldset class="btn-3">
+                            <input type="radio" name="toggle" id="btn-3" checked>
+                            <label for="btn-3">Curt Sheard <span>Bass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
+                        </fieldset>
+                        <fieldset class="btn-4">
+                            <input type="radio" name="toggle" id="btn-4">
+                            <label for="btn-4">Cade Ryker <span>Drums&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
+                        </fieldset>
+                        <fieldset class="btn-5">
+                            <input type="radio" name="toggle" id="btn-5">
+                            <label for="btn-5">Tommie Brendan <span>Electronics</span></label>
+                        </fieldset>
+                    </div>
+                    <div class="text">
+                        <h3>Meet our band</h3>
+                        <p>Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.</p>
+                    </div>
                 </div>
                 <div class="narrow-left"></div>
                 <div class="narrow-right"></div>
+
+                <div class="slides">
+                    <div class="images">
+                        <img src="i/member3.jpg">
+                        <img src="i/member3.jpg">
+                        <img src="i/member3.jpg">
+                        <img src="i/member3.jpg">
+                        <img src="i/member3.jpg">
+                    </div>
+                </div>
             </div>
-            <div class="text">
-                <h3>Meet our band</h3>
-                <p>Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.</p>
+        </section>
+        <section class="music">
+            <div class="inner clearfix">
+            <div class="left-column">
+                <div class="album-img">
+                    <img src="i/album.png">
+                </div>
+                <h3>Discography</h3>
+                <table class="album-list">
+                    <tr>
+                        <td><h4>Surprise Without Flaws</h4></td>
+                        <td><h4 class="year">2015</h4></td>
+                        <td><a class="btn listen">Listen</a></td>
+                        <td><a class="btn buy">Buy</a></tr>
+                    </tr>
+                    <tr>
+                        <td><h4>Mists Of A Shadow</h4></td>
+                        <td><h4 class="year">2014</h4></td>
+                        <td><a class="btn listen">Listen</a></td>
+                        <td><a class="btn buy">Buy</a></tr>
+                    </tr>
+                    <tr>
+                        <td><h4>Heroes Of The Sun</h4></td>
+                        <td><h4 class="year">2013</h4></td>
+                        <td><a class="btn listen">Listen</a></td>
+                        <td><a class="btn buy">Buy</a></tr>
+                    </tr>
+                    <tr>
+                        <td><h4>Picure Of The Past</h4></td>
+                        <td><h4 class="year">2012</h4></td>
+                        <td><a class="btn listen">Listen</a></td>
+                        <td><a class="btn buy">Buy</a></tr>
+                    </tr>
+                </table>
+            </div>
+            <div class="right-column">
+                <h3>Now playing</h3>
+                <h4>Surprise Without Flaws</h4>
+                <h5>01. Clouds In The Forest</h5>
+
+                <div class="player">
+                    <audio controls>
+                        <source src="c/test.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <h4>Surprise Without Flaws</h4>
+                <table class="songs">
+                    <tr>
+                        <td></td>
+                        <td><h5>01. Clouds In The Forest</h5></td>
+                        <td><h5>....................</h5></td>
+                        <td><h5>2:45</h5></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><h5>02. Rat In The River</h5></td>
+                        <td><h5>....................</h5></td>
+                        <td><h5>5:02</h5></td>
+                    </tr>
+
+                </table>
+            </div>
+            </div>
+        </section>
+        <section class="tour">
+            <div class="inner">
+                <h3>Tour dates</h3>
+                <div class="grafic"></div>
+                <table>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
             </div>
         </section>
     </main>
