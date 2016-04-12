@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>The band</title>
     <link href="css/clear.css" rel="stylesheet">
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        ::-webkit-scrollbar { /* for Mac OS X support */
+            width: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -147,17 +154,89 @@
         <section class="tour">
             <div class="inner">
                 <h3>Tour dates</h3>
-                <div class="grafic"></div>
-                <table>
-                    <tr>
-                        <td></td>
-                    </tr>
-                </table>
+                <div class="grafic">
+                    <ul>
+                        <li>COLUMBIANHALLE, 16/12/2015<br>
+                            BERLIN, GERMANY
+                        </li>
+                        <li>MEDIOLANUM FORUM, 16/01/2016<br>
+                            MILAN, ITALY
+                        </li>
+                        <li>COLUMBIANHALLE, 16/12/2015<br>
+                            BERLIN, GERMANY
+                        </li>
+                        <li>MEDIOLANUM FORUM, 16/01/2016<br>
+                            MILAN, ITALY
+                        </li>
+                        <li>COLUMBIANHALLE, 16/12/2015<br>
+                            BERLIN, GERMANY
+                        </li>
+                        <li>MEDIOLANUM FORUM, 16/01/2016<br>
+                            MILAN, ITALY
+                        </li>
+                        <li class="current">COLUMBIANHALLE, 16/12/2015<br>
+                            BERLIN, GERMANY
+                        </li>
+                        <li>MEDIOLANUM FORUM, 16/01/2016<br>
+                            MILAN, ITALY
+                        </li>
+                        <li>COLUMBIANHALLE, 16/12/2015<br>
+                            BERLIN, GERMANY
+                        </li>
+                        <li>MEDIOLANUM FORUM, 16/01/2016<br>
+                            MILAN, ITALY
+                        </li>
+                        <li>COLUMBIANHALLE, 16/12/2015<br>
+                            BERLIN, GERMANY
+                        </li>
+                        <li>MEDIOLANUM FORUM, 16/01/2016<br>
+                            MILAN, ITALY
+                        </li>
+                    </ul>
+                </div>
+                <div class="afisha-scroll-box" id="wrapper">
+                    <table class="afisha">
+                        <tr>
+                            <td class="date"><span>12</span> Dec<br>2015</td>
+                            <td>Tap 1	//	Copenhagen, Denmark</td>
+                            <td><a class="btn buy">Buy ticket</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date"><span>16</span> Dec<br>2015</td>
+                            <td>Rock Club	//	Berlin, Germany</td>
+                            <td><a class="btn buy">Buy ticket</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date"><span>19</span> Dec<br>2015</td>
+                            <td>Space	//	Moscow, Russian Federation</td>
+                            <td><a class="btn buy">Buy ticket</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date"><span>12</span> Dec<br>2015</td>
+                            <td>Tap 1	//	Copenhagen, Denmark</td>
+                            <td><a class="btn buy">Buy ticket</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date"><span>16</span> Dec<br>2015</td>
+                            <td>Rock Club	//	Berlin, Germany</td>
+                            <td><a class="btn buy">Buy ticket</a></td>
+                        </tr>
+                        <tr>
+                            <td class="date"><span>19</span> Dec<br>2015</td>
+                            <td>Space	//	Moscow, Russian Federation</td>
+                            <td><a class="btn buy">Buy ticket</a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
 
     <footer></footer>
-
+    <script src="js/jquery-2.2.3.js" type="text/javascript"></script>
+    <script src="js/perfect-scrollbar.js" type="text/javascript"></script>
+    <script src="js/iscroll.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/baron.js" type="text/javascript"></script>
 </body>
 </html>

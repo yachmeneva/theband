@@ -322,11 +322,11 @@ a.btn {
     font-size: 18px;
     cursor: pointer;
 }
-.album-list a.listen {
+a.listen {
     color: #826b60;
     background: #e4dddb;
 }
-.album-list a.buy {
+a.buy {
     background: #826b60;
     color: #e4dddb;
 }
@@ -351,6 +351,104 @@ a.btn {
 .songs td:nth-child(3) {
     letter-spacing: 5px;
 }
+
+section.tour {
+    background: #f1eeed;
+    border-top: 1px solid #f1eeed;
+    border-bottom: 1px solid #f1eeed;
+    text-align: center;
+}
+.tour h3 {
+    margin: 90px 0 0px;
+}
+.grafic {
+
+}
+.grafic ul {
+    width: 350px;
+    margin: 0 auto;
+    border-right: 2px solid #e4dddb;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+}
+.grafic li {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.grafic li::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e4dddb;
+}
+
+.grafic li.old::after {
+}
+.grafic li.current::after {
+    background: #241c18;
+}
+.grafic li.new::after, .grafic li.current ~ .grafic li::after {
+    background: #826b60;
+}
+#wrapper {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    height: 235px;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+}
+
+.afisha {
+}
+.afisha td {
+    padding: 10px 20px;
+    border-bottom: 2px dotted #826b60;
+    font-family: Oswald, sans-serif;
+    vertical-align: middle;
+}
+.afisha td:first-child {
+    position: relative;
+    font-weight: 700;
+    font-size: 23px;
+    text-transform: uppercase;
+    width: 100px;
+    text-align: left;
+    vertical-align: bottom;
+}
+.afisha td:first-child span {
+    float: left;
+    font-size: 50px;
+}
+.afisha td:first-child::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    width: 4px;
+    height: 45px;
+    background: #e4dddb;
+}
+.afisha td:nth-child(2) {
+    font-size: 30px;
+    font-weight: 200;
+}
+.afisha tr:last-child td {
+    border-bottom: none;
+}
+
+
 
 
 
