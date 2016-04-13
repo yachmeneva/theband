@@ -49,11 +49,11 @@ p {
     text-align: left;
     line-height: 1.5;
 }
-header > .inner, section > .inner {
+header > .inner, section > .inner, footer > .inner {
     width: calc(100% - 205px);
     margin: 0 auto;
 }
-header > .inner {
+header > .inner, footer > .inner {
     padding-top: 85px;
 }
 
@@ -448,6 +448,25 @@ section.tour {
     border-bottom: none;
 }
 
+.ps-container.ps-active-y > .ps-scrollbar-y-rail,
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail,
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail,
+.ps-container:hover > .ps-scrollbar-y-rail,
+.ps-container:hover > .ps-scrollbar-y-rail:hover {
+    width: 14px;
+    background: #e4dddb;
+    opacity: 1;
+}
+.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y,
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y,
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y,
+.ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y,
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y{
+    width: 14px;
+    background-color: #cbc2bd;
+    border-radius: 0;
+    opacity: 1;
+}
 
 
 

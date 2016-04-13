@@ -1,5 +1,7 @@
 jQuery( document ).ready(function() {
 
-    jQuery( "#wrapper" ).baron();
+    Ps.initialize(document.getElementById('wrapper'));
+    //jQuery( "#wrapper" ).perfectScrollbar();
 
 });
+
