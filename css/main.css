@@ -17,7 +17,7 @@ h1 {
     position: relative;
     z-index: 2;
     font-size: 100px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     line-height: 1.1;
@@ -67,22 +67,26 @@ header {
 .header-menu {
     float: left;
 }
-.header-menu li a {
+.header-menu li a, .footer-menu li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 19px;
     font-family: Lora, serif;
     font-weight: 700;
-    color: black;
+    color: #241c18;
     display: block;
     padding: 0;
     margin-right: 15px;
     min-width: 60px;
 }
-.header-menu li {
+.footer-menu li a {
+    color: #f8f8f8;
+    font-weight: 300;
+}
+.header-menu li, .footer-menu li {
     position: relative;
 }
-.header-menu li.selected a::before {
+.header-menu li.selected a::before, .footer-menu li.selected a::before {
     content: '';
     position: absolute;
     width: 55px;
@@ -92,8 +96,11 @@ header {
     left: 2px;
     margin-left: 0;
 }
+.footer-menu li.selected a::before {
+    background-position: 0 -20px;
+}
 
-.header-menu li:not(:first-child)::before {
+.header-menu li:not(:first-child)::before, .footer-menu li:not(:first-child)::before {
     content: '';
     position: absolute;
     left: -12px;
@@ -104,15 +111,18 @@ header {
     margin-top: -3px;
     background: #241c18;
 }
+.footer-menu li:not(:first-child)::before {
+    background: #826b60;
+}
 .logo {
     position: absolute;
     top: 375px;
-    left: 70%;
+    left: 60%;
     width: 400px;
 }
 
 
-.logo h1 span:first-child {
+.logo h1 span:first-child, footer h1 span {
     color: white;
 }
 
@@ -154,7 +164,7 @@ section.slider {
 }
 
 .slider-btns {
-    width: 230px;
+    width: 235px;
     margin: 0 auto;
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
@@ -362,7 +372,22 @@ section.tour {
     margin: 90px 0 0px;
 }
 .grafic {
-
+    position: relative;
+}
+.grafic div[class^="arrow"] {
+    position: absolute;
+    width: 25px;
+    height: 47px;
+    top: 50%;
+    margin-top: -24px;
+    background: url(../i/narrow2.png);
+}
+.grafic .arrow-prev {
+    left: 0;
+    transform: scale(-1);
+}
+.grafic .arrow-next {
+    right: 0;
 }
 .grafic ul {
     width: 350px;
@@ -379,6 +404,7 @@ section.tour {
     margin-right: 25px;
     margin-bottom: 20px;
     text-align: right;
+    color: #e4dddb;
 }
 
 .grafic li::after {
@@ -391,30 +417,33 @@ section.tour {
     border-radius: 50%;
     background: #e4dddb;
 }
-
-.grafic li.old::after {
+.grafic li.current {
+    color: #241c18;
 }
 .grafic li.current::after {
     background: #241c18;
 }
-.grafic li.new::after, .grafic li.current ~ .grafic li::after {
+.grafic li.new::after, li.current ~ li::after {
     background: #826b60;
+}
+li.current ~  li {
+    color: #826b60;
 }
 #wrapper {
     position: relative;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     height: 235px;
     margin-bottom: 50px;
     overflow: hidden;
-
+    padding-right: 30px;
 }
 
 .afisha {
 }
 .afisha td {
     padding: 10px 20px;
-    border-bottom: 2px dotted #826b60;
+    background: url(../i/dots-dark.png) repeat-x bottom left;
     font-family: Oswald, sans-serif;
     vertical-align: middle;
 }
@@ -468,6 +497,80 @@ section.tour {
     opacity: 1;
 }
 
+footer {
+    height: 965px;
+    background: url(../i/footer-bg.jpg) no-repeat top center;
+}
 
+footer h1 {
+    font-size: 80px;
+    background: url(../i/dots-white.png) repeat-x bottom left;
+    width: 630px;
+    padding: 20px;
+    margin: 0 auto 40px;
+}
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feedback form {
+    margin-right: 30px;
+}
+.feedback form input {
+    padding: 10px 20px;
+    background: #241c18;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    border: none;
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin-left: -5px;
+}
+.feedback form input[type="submit"] {
+    background: #241c18;
+    color: #f8f8f8;
+    border: none;
+    letter-spacing: 1px;
+
+}
+.feedback form input[type="email"] {
+    padding: 7px 10px;
+    border: 3px solid #241c18;
+    color: #241c18;
+    background: transparent;
+}
+
+.social a {
+    display: inline-block;
+    width: 63px;
+    height: 60px;
+    margin-right: 10px;
+    background: url(../i/sprite.png) no-repeat;
+}
+.social .fb {
+    background-position: -54px 0;
+}
+.social .yt {
+    background-position: -117px 0;
+}
+
+footer .footer-menu {
+    margin: 450px auto 40px;
+}
+footer .copyright {
+    float: left;
+    color: #f8f8f8;
+    font-size: 19px;
+    font-family: Lora, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+ footer ul {
+     float: right;
+ }
 
 

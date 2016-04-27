@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="inner clearfix">
-            <nav class="header-menu">
+            <nav class="menu header-menu">
                 <ul class="h">
                     <li class="selected"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -150,6 +150,7 @@
             <div class="inner">
                 <h3>Tour dates</h3>
                 <div class="grafic">
+                    <div class="arrow-prev"></div>
                     <ul>
                         <li>COLUMBIANHALLE, 16/12/2015<br>
                             BERLIN, GERMANY
@@ -188,6 +189,7 @@
                             MILAN, ITALY
                         </li>
                     </ul>
+                    <div class="arrow-next"></div>
                 </div>
                 <div class="afisha-scroll-box" id="wrapper">
                     <table class="afisha">
@@ -230,28 +232,30 @@
 
     <footer>
         <div class="inner">
-            <h1><span>Contact</span> +48 202 - 555 - 0114</h1>
-            <form action="#" method="post">
-                <fieldset>
-                    <input type="submit" value="Subscribe" class="btn">
-                    <input type="email" name="email" id="email" required>
-                </fieldset>
-            </form>
-            <div class="social">
-                <a href="#" class="fb"></a>
-                <a href="#" class="yt"></a>
+            <h1>Contact<br><span>+48 202 - 555 - 0114</span></h1>
+            <div class="feedback">
+                <form action="#" method="post">
+                    <fieldset>
+                        <input type="submit" value="Subscribe" class="btn">
+                        <input type="email" name="email" id="email" required>
+                    </fieldset>
+                </form>
+                <div class="social">
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="yt"></a>
+                </div>
             </div>
 
-            <div class="footer-menu">
+            <nav class="menu footer-menu clearfix">
                 <div class="copyright">Copyright 2015 © by The Band</div>
-            </div>
-            <ul class="h">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Tours</a></li>
-                <li class="selected"><a href="#">Contact</a></li>
-            </ul>
+                <ul class="h">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li class="selected"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
     <script src="js/jquery-2.2.3.js"></script>
