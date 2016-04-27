@@ -3,10 +3,13 @@
 @color-pale: #e4dddb;
 @color-very-pale: #f1eeed;
 
+@font-lora: Lora, serif;
+@font-oswald: Oswald, sans-serif;
+
 body {
   width: 100%;
   font-size: 18px;
-  font-family: Lora, serif;
+  font-family: @font-lora;
 
 }
 
@@ -15,15 +18,17 @@ body {
   display: table;
   clear: both;
 }
-ul.h li {
-  display: inline-block;
+ul.h {
+  li {
+    display: inline-block;
+  }
 }
 h1 {
   position: relative;
   z-index: 2;
   font-size: 100px;
   font-weight: 700;
-  font-family: Oswald, sans-serif;
+  font-family: @font-oswald;
   text-transform: uppercase;
   line-height: 1.1;
   text-align: center;
@@ -32,20 +37,20 @@ h1 {
 h3 {
   font-size: 36px;
   font-weight: 400;
-  font-family: Oswald, sans-serif;
+  font-family: @font-oswald;
   color: @color-dark;
   margin-bottom: 50px;
 }
 h4 {
   font-size: 30px;
-  font-family: Oswald, sans-serif;
+  font-family: @font-oswald;
   font-weight: 300;
   color: @color-dark;
   margin-bottom: 25px;
 }
 h5 {
   font-size: 18px;
-  font-family: Lora, serif;
+  font-family: @font-lora;
   font-style: italic;
   color: @color-brown;
   margin-bottom: 10px;
@@ -54,94 +59,112 @@ p {
   text-align: left;
   line-height: 1.5;
 }
-header > .inner, section > .inner, footer > .inner {
-  width: calc(100% - 205px);
+
+.inner-width {
+  width: ~"calc(100% - 205px)";
   margin: 0 auto;
 }
-header > .inner, footer > .inner {
+header > .inner
+{
+  .inner-width();
+  padding-top: 85px;
+}
+section > .inner
+{
+  .inner-width();
+}
+footer > .inner
+{
+  .inner-width();
   padding-top: 85px;
 }
 
-header {
-  position: relative;
-  background: url(../i/guitar.jpg) no-repeat top center;
-  width: 100%;
-  height: 965px;
-}
+  header {
+    position: relative;
+    background: url(../i/guitar.jpg) no-repeat top center;
+    width: 100%;
+    height: 965px;
+  }
 
-.header-menu {
-  float: left;
-}
-.header-menu li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 19px;
-  font-family: Lora, serif;
-  font-weight: 700;
-  color: @color-dark;
-  display: block;
-  padding: 0;
-  margin-right: 15px;
-  min-width: 60px;
-}
-.header-menu li {
-  position: relative;
-}
-.header-menu li.selected a::before {
-  content: '';
-  position: absolute;
-  width: 55px;
-  height: 17px;
-  background: url("../i/sprite.png") no-repeat top left;
-  bottom: -20px;
-  left: 2px;
-  margin-left: 0;
-}
+  .header-menu {
+    float: left;
+    li {
+      position: relative;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-family: @font-lora;
+        font-weight: 700;
+        color: @color-dark;
+        display: block;
+        padding: 0;
+        margin-right: 15px;
+        min-width: 60px;
+      }
+    }
+  }
 
-.header-menu li:not(:first-child)::before {
-  content: '';
-  position: absolute;
-  left: -12px;
-  top: 50%;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  margin-top: -3px;
-  background: @color-dark;
-}
-.logo {
-  position: absolute;
-  top: 375px;
-  left: 70%;
-  width: 400px;
-}
+  .header-menu li.selected a::before {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 17px;
+    background: url("../i/sprite.png") no-repeat top left;
+    bottom: -20px;
+    left: 2px;
+    margin-left: 0;
+  }
 
+  .header-menu li:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -3px;
+    background: @color-dark;
+  }
 
-.logo h1 span:first-child {
-  color: white;
-}
+  .logo
+  {
+    position: absolute;
+    top: 375px;
+    left: 70%;
+    width: 400px;
+    h1
+    {
+      span:first-child
+      {
+        color: white;
+      }
+    }
+    ul {
+      position: absolute;
+      top: 150px;
+      left: 40px;
+      text-shadow:
+                300px -240px @color-very-pale,
+              300px 0px @color-very-pale,
+                200px -270px @color-very-pale,
+                200px -30px @color-very-pale,
+                100px -90px @color-very-pale,
+                100px -330px @color-very-pale,
+                0 -240px @color-very-pale;
+      li
+      {
+        color: @color-very-pale;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: @font-lora;
+        margin-bottom: 18px;
+        text-align: left;
+      }
+    }
+  }
 
-.logo ul {
-  position: absolute;
-  top: 150px;
-  left: 40px;
-  text-shadow:
-            300px -240px @color-very-pale,
-          300px 0px @color-very-pale,
-            200px -270px @color-very-pale,
-            200px -30px @color-very-pale,
-            100px -90px @color-very-pale,
-            100px -330px @color-very-pale,
-            0 -240px @color-very-pale;
-}
-.logo ul li {
-  color: @color-very-pale;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: Lora, serif;
-  margin-bottom: 18px;
-  text-align: left;
-}
 
 section.slider {
   background: #f2efee;
@@ -472,6 +495,11 @@ section.tour {
   border-radius: 0;
   opacity: 1;
 }
+
+
+
+
+
 
 
 
